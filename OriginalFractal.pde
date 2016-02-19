@@ -1,17 +1,15 @@
-int myColor;
-
-void setup()
+public void setup()
 {
     size(500,500);
     background(0,0,0);
 }
 
-void draw()
+public void draw()
 {
     tomato(250, 150, 300);
 }
 
-void tomato(int x, int y, int w)
+public void tomato(int x, int y, int w)
 {
     if (w > 10)
     {
@@ -22,8 +20,7 @@ void tomato(int x, int y, int w)
      } 
     else 
     {
-    	myColor = color((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255));
-        stroke(myColor);
+        stroke((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255));
         noFill();
         rect(x,y,w,w);
     }
